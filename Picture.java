@@ -64,7 +64,7 @@ public class Picture
         suelo1.changeSize(2000);
         suelo1.makeVisible();
         
-        sun.slowMoveVertical(150);
+      
         suelo1.makeVisible();
         
        
@@ -84,10 +84,14 @@ public class Picture
         
     
     }
-
-    /**
-     * Change this picture to black/white display
+    /** 
+     * Move Sol
      */
+    public void moveSun()
+    {sun.slowMoveVertical(150);
+     suelo1.makeVisible();
+    }
+    
     public void setBlackAndWhite()
     {
         if (wall != null)   // only if it's painted already...
