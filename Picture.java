@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle suelo1;
     private Circle sun;
+    private Person Persona;
     
 
     /**
@@ -63,10 +64,19 @@ public class Picture
         suelo1.moveVertical(165);
         suelo1.changeSize(2000);
         suelo1.makeVisible();
-        
-      
+       
         suelo1.makeVisible();
         
+        Persona = new Person();
+        Persona.moveHorizontal(-180);
+        Persona.makeVisible();
+        
+       
+        
+        
+      
+        
+       
        
         
        
@@ -97,6 +107,10 @@ public class Picture
      sun.changeColor("black");
     }
     
+    /**
+     * Set black and white
+     */
+     
     public void setBlackAndWhite()
     {
         if (wall != null)   // only if it's painted already...
@@ -108,7 +122,17 @@ public class Picture
           
         }
     }
-
+    /**
+     * Set person
+     */
+    public void newPerson()
+    
+    {   {Persona.makeVisible();
+        Persona.moveHorizontal(-180);
+        Persona.slowMoveHorizontal(150);
+    }
+    }
+ 
     /**
      * Change this picture to use color display
      */
