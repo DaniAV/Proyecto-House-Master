@@ -127,9 +127,8 @@ public class Picture
      */
     public void newPerson()
     
-    {   {Persona.makeVisible();
-        Persona.moveHorizontal(-180);
-        Persona.slowMoveHorizontal(150);
+    {  {Persona.makeVisible();
+        Persona.slowMoveHorizontal(50);
     }
     }
  
